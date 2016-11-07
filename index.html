@@ -13,7 +13,9 @@
 	  stroke-width: 3px;
 	}
 
-	.node text { font: 12px sans-serif; }
+	.node text {
+        font: 12px sans-serif;
+    }
 
 	.link {
 	  fill: none;
@@ -48,7 +50,7 @@ var diagonal = d3.svg.diagonal()
 var svg = d3.select("body").append("svg")
 	.attr("width", width + margin.right + margin.left)
 	.attr("height", height + margin.top + margin.bottom)
-  .append("g")
+    .append("g")
 	.attr("transform", "translate(" + margin.left + "," + margin.top + ")");
 
 // load the external data
